@@ -138,13 +138,23 @@
 
 <style>
   main {
-    max-width: 800px;
+    width: 100%;
+    max-width: 100%;
     margin: 0 auto;
-    padding: 20px;
+    padding: 10px;
     font-family: Arial, sans-serif;
+    box-sizing: border-box;
   }
 
-  h1, h2 {
+  h1 {
+    font-size: 1.8em;
+    text-align: center;
+    color: #333;
+    margin-bottom: 15px;
+  }
+
+  h2 {
+    font-size: 1.4em;
     text-align: center;
     color: #333;
   }
@@ -152,36 +162,51 @@
   .lobby, .reveal, .done {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 15px;
   }
 
   .player-list, .spy-count {
     border: 1px solid #ddd;
-    padding: 15px;
+    padding: 12px;
     border-radius: 5px;
     background-color: #fff;
   }
 
   .player-input {
     display: flex;
-    gap: 10px;
-    margin-bottom: 10px;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 12px;
+  }
+
+  .player-input button {
+    align-self: flex-end;
+    width: 100%;
   }
 
   input[type="text"] {
-    flex: 1;
-    padding: 8px;
+    width: 100%;
+    padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
+    font-size: 16px; /* Better for touch */
+    box-sizing: border-box;
+  }
+
+  input[type="range"] {
+    width: 100%;
+    margin: 10px 0;
   }
 
   button {
-    padding: 8px 16px;
+    padding: 12px 16px;
     background-color: #4CAF50;
     color: white;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    font-size: 16px; /* Better for touch */
+    min-height: 44px; /* Minimum touch target size */
   }
 
   button:hover {
@@ -194,26 +219,27 @@
   }
 
   .start-button {
-    font-size: 1.2em;
-    padding: 12px;
+    font-size: 1.1em;
+    padding: 14px;
+    width: 100%;
   }
 
   .card {
     border: 1px solid #ddd;
-    padding: 20px;
+    padding: 15px;
     border-radius: 5px;
     text-align: center;
-    margin: 20px 0;
+    margin: 15px 0;
     background-color: #fff;
   }
 
   .word {
-    font-size: 1.5em;
+    font-size: 1.3em;
     color: #333;
   }
 
   .spy {
-    font-size: 1.5em;
+    font-size: 1.3em;
     color: #ff0000;
     font-weight: bold;
   }
@@ -223,18 +249,20 @@
     font-weight: bold;
     display: block;
     margin-top: 8px;
+    text-align: center;
   }
 
   .instruction {
-    font-size: 1.2em;
+    font-size: 1.1em;
     color: #333;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
 
   .reveal-button {
-    font-size: 1.2em;
-    padding: 12px 24px;
+    font-size: 1.1em;
+    padding: 14px;
     background-color: #2196F3;
+    width: 100%;
   }
 
   .reveal-button:hover {
@@ -243,7 +271,7 @@
 
   .pass-device {
     background-color: #fff;
-    padding: 15px;
+    padding: 12px;
     border-radius: 5px;
     border: 1px solid #ddd;
     margin-bottom: 10px;
@@ -254,13 +282,88 @@
 
   .game-info {
     background-color: #fff;
-    padding: 15px;
+    padding: 12px;
     border-radius: 5px;
     border: 1px solid #ddd;
     margin-bottom: 10px;
     color: #333;
     text-align: center;
-    font-size: 1.2em;
+    font-size: 1.1em;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+
+  /* Tablet and larger */
+  @media (min-width: 768px) {
+    main {
+      max-width: 90%;
+      padding: 15px;
+    }
+
+    h1 {
+      font-size: 2.2em;
+    }
+
+    h2 {
+      font-size: 1.6em;
+    }
+
+    .player-input {
+      flex-direction: row;
+      align-items: center;
+    }
+
+    .player-input button {
+      width: auto;
+    }
+
+    .start-button {
+      width: auto;
+      margin: 0 auto;
+      display: block;
+      min-width: 200px;
+    }
+
+    .reveal-button {
+      width: auto;
+      margin: 0 auto;
+      display: block;
+      min-width: 200px;
+    }
+
+    .word {
+      font-size: 1.4em;
+    }
+
+    .spy {
+      font-size: 1.4em;
+    }
+  }
+
+  /* Desktop */
+  @media (min-width: 1024px) {
+    main {
+      max-width: 800px;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 2.5em;
+    }
+
+    h2 {
+      font-size: 1.8em;
+    }
+
+    .card {
+      padding: 20px;
+    }
+
+    .word {
+      font-size: 1.5em;
+    }
+
+    .spy {
+      font-size: 1.5em;
+    }
   }
 </style>

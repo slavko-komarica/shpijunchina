@@ -1,956 +1,620 @@
 category,word
-animals,elephant
-animals,butterfly
-animals,dolphin
-animals,penguin
-animals,giraffe
-animals,kangaroo
-animals,octopus
-animals,porcupine
-animals,chameleon
-animals,flamingo
-animals,hedgehog
-animals,platypus
-animals,armadillo
-animals,raccoon
-animals,squirrel
-animals,koala
-animals,cheetah
-animals,jellyfish
-animals,scorpion
-animals,rhinoceros
-animals,tiger
-animals,panda
-animals,zebra
-animals,gorilla
-animals,sloth
-animals,jaguar
-animals,leopard
-animals,peacock
-animals,toucan
-animals,parrot
-animals,crocodile
-animals,alligator
-animals,iguana
-animals,salamander
-animals,tortoise
-animals,turtle
-animals,hamster
-animals,guinea pig
-animals,ferret
-animals,chinchilla
-animals,mongoose
-animals,meerkat
-animals,wombat
-animals,tasmanian devil
-animals,lynx
-animals,bobcat
-animals,panther
-animals,cougar
-animals,coyote
-animals,jackal
-animals,hyena
-animals,wolverine
-animals,badger
-animals,otter
-animals,beaver
-animals,mole
-animals,shrew
-animals,lemur
-animals,marmoset
-animals,gibbon
-animals,orangutan
-animals,baboon
-animals,mandrill
-animals,macaque
-animals,capuchin
-animals,tamarin
-animals,loris
-animals,tarsier
-animals,anteater
-animals,pangolin
-animals,aardvark
-animals,warthog
-animals,bison
-animals,buffalo
-animals,wildebeest
-animals,antelope
-animals,gazelle
-animals,impala
-animals,moose
-animals,caribou
-animals,reindeer
-animals,elk
-animals,deer
-animals,giraffe
-animals,okapi
-animals,tapir
-animals,hippopotamus
-animals,walrus
-animals,seal
-animals,sea lion
-animals,manatee
-animals,narwhal
-animals,beluga
-animals,porpoise
-animals,orca
-animals,humpback
-animals,seahorse
-animals,starfish
-animals,lobster
-technology,computer
-technology,keyboard
-technology,smartphone
-technology,robot
-technology,satellite
-technology,microchip
-technology,algorithm
-technology,database
-technology,firewall
-technology,encryption
-technology,hologram
-technology,processor
-technology,bluetooth
-technology,webcam
-technology,router
-technology,drone
-technology,server
-technology,headphones
-technology,touchscreen
-technology,printer
-technology,laptop
-technology,tablet
-technology,smartwatch
-technology,virtual reality
-technology,augmented reality
-technology,artificial intelligence
-technology,machine learning
-technology,blockchain
-technology,cryptocurrency
-technology,biometrics
-technology,nanotechnology
-technology,quantum computing
-technology,cloud computing
-technology,internet of things
-technology,cybersecurity
-technology,automation
-technology,robotics
-technology,3D printing
-technology,wearable technology
-technology,voice assistant
-technology,facial recognition
-technology,gesture control
-technology,motion sensor
-technology,GPS
-technology,wireless charging
-technology,fiber optics
-technology,broadband
-technology,streaming
-technology,podcast
-technology,e-reader
-technology,digital camera
-technology,video conferencing
-technology,social media
-technology,search engine
-technology,web browser
-technology,operating system
-technology,software
-technology,application
-technology,programming
-technology,coding
-technology,debugging
-technology,algorithm
-technology,data mining
-technology,big data
-technology,analytics
-technology,dashboard
-technology,user interface
-technology,user experience
-technology,responsive design
-technology,virtual machine
-technology,server rack
-technology,data center
-technology,network
-technology,bandwidth
-technology,firewall
-technology,antivirus
-technology,malware
-technology,phishing
-technology,encryption
-technology,decryption
-technology,authentication
-technology,password
-technology,biometric scanner
-technology,fingerprint reader
-technology,retina scanner
-technology,voice recognition
-technology,neural network
-technology,deep learning
-technology,natural language processing
-technology,computer vision
-technology,autonomous vehicle
-technology,electric vehicle
-technology,solar panel
-technology,battery
-technology,microprocessor
-technology,semiconductor
-technology,transistor
-technology,circuit board
-technology,motherboard
-technology,hard drive
-technology,solid state drive
-food,chocolate
-food,spaghetti
-food,avocado
-food,pancake
-food,croissant
-food,sushi
-food,burrito
-food,popcorn
-food,cheesecake
-food,guacamole
-food,lasagna
-food,pretzel
-food,waffle
-food,hummus
-food,cupcake
-food,smoothie
-food,omelette
-food,kebab
-food,tiramisu
-food,gingerbread
-food,pizza
-food,hamburger
-food,taco
-food,sandwich
-food,salad
-food,steak
-food,salmon
-food,shrimp
-food,lobster
-food,crab
-food,oyster
-food,mussels
-food,clams
-food,calamari
-food,caviar
-food,truffle
-food,mushroom
-food,asparagus
-food,broccoli
-food,cauliflower
-food,spinach
-food,kale
-food,lettuce
-food,tomato
-food,cucumber
-food,carrot
-food,potato
-food,sweet potato
-food,pumpkin
-food,zucchini
-food,eggplant
-food,onion
-food,garlic
-food,ginger
-food,cinnamon
-food,nutmeg
-food,vanilla
-food,pepper
-food,salt
-food,sugar
-food,honey
-food,maple syrup
-food,molasses
-food,vinegar
-food,olive oil
-food,butter
-food,cheese
-food,yogurt
-food,ice cream
-food,sorbet
-food,gelato
-food,pudding
-food,custard
-food,mousse
-food,souffle
-food,crepe
-food,donut
-food,muffin
-food,bagel
-food,croissant
-food,baguette
-food,sourdough
-food,rye bread
-food,cornbread
-food,naan
-food,tortilla
-food,pita
-food,dumpling
-food,pierogi
-food,ravioli
-food,gnocchi
-food,risotto
-food,paella
-food,curry
-food,stir fry
-food,ramen
-food,pho
-food,kimchi
-food,sauerkraut
-food,pickles
-food,jerky
-food,bacon
-food,sausage
-food,pepperoni
-food,salami
-food,prosciutto
-sports,basketball
-sports,volleyball
-sports,skateboard
-sports,surfboard
-sports,snowboard
-sports,marathon
-sports,gymnastics
-sports,badminton
-sports,trampoline
-sports,archery
-sports,javelin
-sports,wrestling
-sports,fencing
-sports,kayaking
-sports,snorkeling
-sports,bowling
-sports,frisbee
-sports,cricket
-sports,hockey
-sports,karate
-sports,soccer
-sports,football
-sports,baseball
-sports,tennis
-sports,golf
-sports,rugby
-sports,lacrosse
-sports,handball
-sports,water polo
-sports,polo
-sports,cycling
-sports,mountain biking
-sports,BMX
-sports,motocross
-sports,formula one
-sports,nascar
-sports,sailing
-sports,rowing
-sports,canoeing
-sports,rafting
-sports,scuba diving
-sports,freediving
-sports,cliff diving
-sports,high diving
-sports,synchronized swimming
-sports,water skiing
-sports,wakeboarding
-sports,kitesurfing
-sports,windsurfing
-sports,parasailing
-sports,paragliding
-sports,hang gliding
-sports,skydiving
-sports,bungee jumping
-sports,rock climbing
-sports,ice climbing
-sports,mountaineering
-sports,hiking
-sports,trail running
-sports,orienteering
-sports,parkour
-sports,skateboarding
-sports,longboarding
-sports,roller skating
-sports,roller derby
-sports,ice skating
-sports,figure skating
-sports,speed skating
-sports,ice hockey
-sports,curling
-sports,skiing
-sports,ski jumping
-sports,biathlon
-sports,snowboarding
-sports,snowshoeing
-sports,bobsleigh
-sports,luge
-sports,skeleton
-sports,weightlifting
-sports,powerlifting
-sports,bodybuilding
-sports,crossfit
-sports,gymnastics
-sports,rhythmic gymnastics
-sports,trampoline
-sports,diving
-sports,shot put
-sports,discus throw
-sports,hammer throw
-sports,javelin throw
-sports,high jump
-sports,long jump
-sports,triple jump
-sports,pole vault
-sports,hurdles
-sports,steeplechase
-sports,sprinting
-sports,marathon
-sports,ultramarathon
-sports,triathlon
-sports,pentathlon
-sports,decathlon
-sports,judo
-sports,taekwondo
-travel,airplane
-travel,submarine
-travel,lighthouse
-travel,mountain
-travel,waterfall
-travel,skyscraper
-travel,umbrella
-travel,restaurant
-travel,telescope
-travel,backpack
-travel,passport
-travel,suitcase
-travel,compass
-travel,binoculars
-travel,hammock
-travel,gondola
-travel,pyramid
-travel,volcano
-travel,rainforest
-travel,archipelago
-travel,beach
-travel,island
-travel,coral reef
-travel,desert
-travel,oasis
-travel,canyon
-travel,cliff
-travel,cave
-travel,geyser
-travel,hot spring
-travel,glacier
-travel,iceberg
-travel,fjord
-travel,valley
-travel,prairie
-travel,savanna
-travel,jungle
-travel,forest
-travel,meadow
-travel,lake
-travel,river
-travel,stream
-travel,ocean
-travel,sea
-travel,bay
-travel,lagoon
-travel,harbor
-travel,port
-travel,marina
-travel,dock
-travel,pier
-travel,bridge
-travel,tunnel
-travel,highway
-travel,railway
-travel,trail
-travel,path
-travel,campsite
-travel,tent
-travel,sleeping bag
-travel,campfire
-travel,lantern
-travel,flashlight
-travel,map
-travel,guidebook
-travel,camera
-travel,sunglasses
-travel,sunscreen
-travel,hat
-travel,sandals
-travel,hiking boots
-travel,snorkel
-travel,wetsuit
-travel,surfboard
-travel,kayak
-travel,canoe
-travel,sailboat
-travel,yacht
-travel,cruise ship
-travel,ferry
-travel,train
-travel,subway
-travel,tram
-travel,cable car
-travel,funicular
-travel,bus
-travel,taxi
-travel,bicycle
-travel,motorcycle
-travel,scooter
-travel,rickshaw
-travel,palanquin
-travel,caravan
-travel,motorhome
-travel,hotel
-travel,hostel
-travel,resort
-travel,villa
-travel,bungalow
-travel,cabin
-travel,cottage
-travel,castle
-travel,palace
-travel,temple
-travel,shrine
-travel,cathedral
-travel,mosque
-travel,synagogue
-household,refrigerator
-household,chandelier
-household,bookshelf
-household,armchair
-household,curtains
-household,doorknob
-household,thermostat
-household,blender
-household,cushion
-household,bathtub
-household,chimney
-household,flowerpot
-household,staircase
-household,wardrobe
-household,dishwasher
-household,microwave
-household,toaster
-household,blanket
-household,laundry
-household,vacuum
-household,sofa
-household,coffee table
-household,dining table
-household,chair
-household,stool
-household,bench
-household,bed
-household,mattress
-household,pillow
-household,duvet
-household,comforter
-household,sheets
-household,nightstand
-household,dresser
-household,mirror
-household,lamp
-household,ceiling fan
-household,air conditioner
-household,heater
-household,humidifier
-household,dehumidifier
-household,air purifier
-household,smoke detector
-household,carbon monoxide detector
-household,fire extinguisher
-household,first aid kit
-household,toolbox
-household,hammer
-household,screwdriver
-household,wrench
-household,pliers
-household,drill
-household,saw
-household,ladder
-household,stepstool
-household,broom
-household,mop
-household,dustpan
-household,sponge
-household,bucket
-household,trash can
-household,recycling bin
-household,compost bin
-household,watering can
-household,garden hose
-household,lawnmower
-household,rake
-household,shovel
-household,trowel
-household,pruning shears
-household,oven
-household,stove
-household,range hood
-household,sink
-household,faucet
-household,garbage disposal
-household,cutting board
-household,knife block
-household,mixing bowl
-household,measuring cup
-household,measuring spoon
-household,spatula
-household,whisk
-household,rolling pin
-household,baking sheet
-household,muffin tin
-household,cake pan
-household,pot
-household,pan
-household,pressure cooker
-household,slow cooker
-household,coffee maker
-household,kettle
-household,teapot
-household,juicer
-household,food processor
-household,stand mixer
-household,hand mixer
-household,can opener
-household,bottle opener
-household,corkscrew
-household,colander
-household,strainer
-music,orchestra
-music,saxophone
-music,tambourine
-music,accordion
-music,harmonica
-music,xylophone
-music,metronome
-music,synthesizer
-music,trombone
-music,percussion
-music,amplifier
-music,microphone
-music,headphones
-music,conductor
-music,symphony
-music,melody
-music,rhythm
-music,harmony
-music,serenade
-music,crescendo
-music,piano
-music,guitar
-music,violin
-music,cello
-music,bass
-music,drums
-music,flute
-music,clarinet
-music,trumpet
-music,harp
-music,banjo
-music,ukulele
-music,mandolin
-music,bagpipes
-music,didgeridoo
-music,sitar
-music,tabla
-music,djembe
-music,marimba
-music,vibraphone
-music,glockenspiel
-music,theremin
-music,keytar
-music,turntable
-music,sampler
-music,sequencer
-music,drum machine
-music,vocoder
-music,autotune
-music,distortion
-music,reverb
-music,delay
-music,chorus
-music,phaser
-music,flanger
-music,equalizer
-music,compressor
-music,mixer
-music,soundboard
-music,monitor
-music,speaker
-music,subwoofer
-music,tweeter
-music,woofer
-music,preamp
-music,effects pedal
-music,looper
-music,tuner
-music,capo
-music,slide
-music,pick
-music,bow
-music,reed
-music,mouthpiece
-music,valve
-music,string
-music,bridge
-music,fret
-music,tuning peg
-music,soundhole
-music,resonator
-music,pickup
-music,tremolo
-music,whammy bar
-music,sustain pedal
-music,damper pedal
-music,soft pedal
-music,sostenuto pedal
-music,sheet music
-music,staff
-music,note
-music,rest
-music,clef
-music,key signature
-music,time signature
-music,tempo
-music,dynamics
-music,articulation
-music,chord
-music,scale
-music,arpeggio
-music,octave
-music,interval
-music,triad
-music,seventh
-nature,sunflower
-nature,dandelion
-nature,avalanche
-nature,hurricane
-nature,earthquake
-nature,glacier
-nature,geyser
-nature,quicksand
-nature,stalagmite
-nature,stalactite
-nature,bioluminescence
-nature,photosynthesis
-nature,hibernation
-nature,migration
-nature,pollination
-nature,ecosystem
-nature,rainforest
-nature,tundra
-nature,savanna
-nature,coral
-nature,oak
-nature,pine
-nature,redwood
-nature,sequoia
-nature,bamboo
-nature,cactus
-nature,fern
-nature,moss
-nature,lichen
-nature,algae
-nature,seaweed
-nature,kelp
-nature,plankton
-nature,bacteria
-nature,fungus
-nature,mushroom
-nature,truffle
-nature,orchid
-nature,lily
-nature,rose
-nature,tulip
-nature,daisy
-nature,lavender
-nature,thistle
-nature,clover
-nature,ivy
-nature,vine
-nature,willow
-nature,birch
-nature,maple
-nature,aspen
-nature,baobab
-nature,mangrove
-nature,palm
-nature,cypress
-nature,juniper
-nature,spruce
-nature,cedar
-nature,hemlock
-nature,eucalyptus
-nature,acacia
-nature,banyan
-nature,bonsai
-nature,deciduous
-nature,coniferous
-nature,evergreen
-nature,perennial
-nature,annual
-nature,biennial
-nature,carnivorous
-nature,succulent
-nature,drought
-nature,flood
-nature,tsunami
-nature,tornado
-nature,cyclone
-nature,typhoon
-nature,blizzard
-nature,hailstorm
-nature,thunderstorm
-nature,lightning
-nature,rainbow
-nature,aurora
-nature,sunrise
-nature,sunset
-nature,twilight
-nature,dawn
-nature,dusk
-nature,solstice
-nature,equinox
-nature,tide
-nature,current
-nature,wave
-nature,ripple
-nature,erosion
-nature,weathering
-nature,sedimentation
-nature,fossilization
-nature,petrification
-nature,crystallization
-nature,metamorphosis
-nature,adaptation
-nature,evolution
-nature,mutation
-nature,natural selection
-nature,biodiversity
-nature,symbiosis
-nature,parasitism
-nature,mutualism
-nature,commensalism
-science,telescope
-science,microscope
-science,laboratory
-science,experiment
-science,hypothesis
-science,molecule
-science,gravity
-science,magnetism
-science,evolution
-science,genetics
-science,astronomy
-science,chemistry
-science,biology
-science,physics
-science,botany
-science,zoology
-science,archaeology
-science,paleontology
-science,meteorology
-science,neuroscience
-science,atom
-science,electron
-science,proton
-science,neutron
-science,nucleus
-science,isotope
-science,element
-science,compound
-science,reaction
-science,catalyst
-science,enzyme
-science,protein
-science,DNA
-science,RNA
-science,chromosome
-science,gene
-science,genome
-science,cell
-science,membrane
-science,mitochondria
-science,chloroplast
-science,ribosome
-science,bacteria
-science,virus
-science,fungus
-science,parasite
-science,symbiosis
-science,ecosystem
-science,biodiversity
-science,taxonomy
-science,species
-science,genus
-science,family
-science,order
-science,class
-science,phylum
-science,kingdom
-science,domain
-science,fossil
-science,sediment
-science,stratigraphy
-science,plate tectonics
-science,earthquake
-science,volcano
-science,magma
-science,lava
-science,igneous
-science,metamorphic
-science,sedimentary
-science,mineral
-science,crystal
-science,gemstone
-science,ore
-science,metal
-science,alloy
-science,polymer
-science,plastic
-science,ceramic
-science,glass
-science,semiconductor
-science,superconductor
-science,insulator
-science,conductor
-science,circuit
-science,current
-science,voltage
-science,resistance
-science,capacitance
-science,inductance
-science,frequency
-science,wavelength
-science,amplitude
-science,spectrum
-science,radiation
-science,radioactivity
-science,half-life
-science,fusion
-science,fission
-science,quantum
-science,relativity
-science,spacetime
-science,dimension
-science,string theory
-science,multiverse
-science,black hole
-science,neutron star
-science,pulsar
-science,quasar
-science,galaxy
-science,nebula
-science,supernova
-science,comet
-science,asteroid
-science,meteor
-science,planet
-science,moon
-science,satellite
-science,orbit
-science,eclipse
+zivotinje,slon
+zivotinje,leptir
+zivotinje,delfin
+zivotinje,pingvin
+zivotinje,zirafa
+zivotinje,kengur
+zivotinje,hobotnica
+zivotinje,jez
+zivotinje,flamingo
+zivotinje,veverica
+zivotinje,koala
+zivotinje,tigar
+zivotinje,panda
+zivotinje,zebra
+zivotinje,gorila
+zivotinje,jaguar
+zivotinje,leopard
+zivotinje,paun
+zivotinje,papagaj
+zivotinje,krokodil
+zivotinje,kornjaca
+zivotinje,hrčak
+zivotinje,zamorac
+zivotinje,lisica
+zivotinje,vuk
+zivotinje,medved
+zivotinje,lav
+zivotinje,majmun
+zivotinje,zmija
+zivotinje,zec
+tehnologija,računar
+tehnologija,tastatura
+tehnologija,pametni telefon
+tehnologija,robot
+tehnologija,satelit
+tehnologija,mikročip
+tehnologija,algoritam
+tehnologija,baza podataka
+tehnologija,zaštitni zid
+tehnologija,enkripcija
+tehnologija,hologram
+tehnologija,procesor
+tehnologija,bluetooth
+tehnologija,veb kamera
+tehnologija,ruter
+tehnologija,dron
+tehnologija,server
+tehnologija,slušalice
+tehnologija,ekran na dodir
+tehnologija,štampač
+tehnologija,laptop
+tehnologija,tablet
+tehnologija,pametni sat
+tehnologija,virtuelna realnost
+tehnologija,veštačka inteligencija
+tehnologija,mašinsko učenje
+tehnologija,blokčejn
+tehnologija,kriptovaluta
+tehnologija,biometrija
+tehnologija,internet stvari
+tehnologija,sajber bezbednost
+tehnologija,automatizacija
+tehnologija,robotika
+tehnologija,3D štampanje
+tehnologija,glasovni asistent
+tehnologija,prepoznavanje lica
+tehnologija,GPS
+tehnologija,bežično punjenje
+tehnologija,društvene mreže
+tehnologija,pretraživač
+tehnologija,veb pregledač
+tehnologija,operativni sistem
+tehnologija,softver
+tehnologija,aplikacija
+tehnologija,programiranje
+tehnologija,kodiranje
+hrana,čokolada
+hrana,špagete
+hrana,avokado
+hrana,palačinka
+hrana,kroasan
+hrana,suši
+hrana,burito
+hrana,kokice
+hrana,čizkejk
+hrana,lazanje
+hrana,pereca
+hrana,vafl
+hrana,humus
+hrana,kolač
+hrana,omlet
+hrana,ćevapi
+hrana,sarma
+hrana,pica
+hrana,hamburger
+hrana,sendvič
+hrana,salata
+hrana,biftek
+hrana,losos
+hrana,škampi
+hrana,pečurke
+hrana,špargle
+hrana,brokoli
+hrana,spanać
+hrana,paradajz
+hrana,krastavac
+hrana,šargarepa
+hrana,krompir
+hrana,bundeva
+hrana,tikvice
+hrana,luk
+hrana,beli luk
+hrana,đumbir
+hrana,cimet
+hrana,vanila
+hrana,biber
+hrana,so
+hrana,šećer
+hrana,med
+hrana,javorov sirup
+hrana,maslinovo ulje
+hrana,puter
+hrana,sir
+hrana,jogurt
+hrana,sladoled
+hrana,puding
+hrana,palačinke
+hrana,krofna
+hrana,mafin
+hrana,kifla
+hrana,bagel
+hrana,hleb
+hrana,tortilja
+hrana,pita
+hrana,knedla
+hrana,kari
+hrana,rezanci
+hrana,kiseli kupus
+hrana,slanina
+hrana,kobasica
+sport,košarka
+sport,odbojka
+sport,skejt
+sport,surfovanje
+sport,snoubord
+sport,maraton
+sport,gimnastika
+sport,badminton
+sport,streljaštvo
+sport,rvanje
+sport,mačevanje
+sport,kajak
+sport,ronjenje
+sport,kuglanje
+sport,frizbi
+sport,kriket
+sport,hokej
+sport,karate
+sport,fudbal
+sport,bejzbol
+sport,tenis
+sport,golf
+sport,ragbi
+sport,rukomet
+sport,vaterpolo
+sport,biciklizam
+sport,planinski biciklizam
+sport,formula jedan
+sport,jedrenje
+sport,veslanje
+sport,skijanje
+sport,klizanje
+sport,plivanje
+sport,trčanje
+sport,planinarenje
+sport,dizanje tegova
+sport,boks
+sport,džudo
+sport,tekvondo
+putovanje,avion
+putovanje,podmornica
+putovanje,svetionik
+putovanje,planina
+putovanje,vodopad
+putovanje,neboder
+putovanje,kišobran
+putovanje,restoran
+putovanje,teleskop
+putovanje,ranac
+putovanje,pasoš
+putovanje,kofer
+putovanje,kompas
+putovanje,dvogled
+putovanje,gondola
+putovanje,piramida
+putovanje,vulkan
+putovanje,prašuma
+putovanje,arhipelag
+putovanje,plaža
+putovanje,ostrvo
+putovanje,koralni greben
+putovanje,pustinja
+putovanje,oaza
+putovanje,kanjon
+putovanje,litica
+putovanje,pećina
+putovanje,gejzir
+putovanje,glečer
+putovanje,ledeni breg
+putovanje,fjord
+putovanje,dolina
+putovanje,prašuma
+putovanje,šuma
+putovanje,livada
+putovanje,jezero
+putovanje,reka
+putovanje,potok
+putovanje,okean
+putovanje,more
+putovanje,zaliv
+putovanje,laguna
+putovanje,luka
+putovanje,most
+putovanje,tunel
+putovanje,autoput
+putovanje,železnica
+putovanje,staza
+putovanje,kamp
+putovanje,šator
+putovanje,vreća za spavanje
+putovanje,logorska vatra
+putovanje,lampa
+putovanje,baterijska lampa
+putovanje,mapa
+putovanje,vodič
+putovanje,kamera
+putovanje,naočare za sunce
+putovanje,krema za sunčanje
+putovanje,šešir
+putovanje,sandale
+putovanje,planinarske cipele
+putovanje,jedrilica
+putovanje,jahta
+putovanje,kruzer
+putovanje,trajekt
+putovanje,voz
+putovanje,metro
+putovanje,tramvaj
+putovanje,žičara
+putovanje,autobus
+putovanje,taksi
+putovanje,bicikl
+putovanje,motor
+putovanje,skuter
+putovanje,hotel
+putovanje,hostel
+putovanje,odmaralište
+putovanje,vila
+putovanje,bungalov
+putovanje,koliba
+putovanje,zamak
+putovanje,palata
+putovanje,hram
+putovanje,katedrala
+putovanje,džamija
+putovanje,sinagoga
+domaćinstvo,frižider
+domaćinstvo,luster
+domaćinstvo,polica za knjige
+domaćinstvo,fotelja
+domaćinstvo,zavese
+domaćinstvo,kvaka
+domaćinstvo,termostat
+domaćinstvo,blender
+domaćinstvo,jastuk
+domaćinstvo,kada
+domaćinstvo,dimnjak
+domaćinstvo,saksija
+domaćinstvo,stepenište
+domaćinstvo,ormar
+domaćinstvo,mašina za sudove
+domaćinstvo,mikrotalasna
+domaćinstvo,toster
+domaćinstvo,ćebe
+domaćinstvo,veš
+domaćinstvo,usisivač
+domaćinstvo,sofa
+domaćinstvo,stočić za kafu
+domaćinstvo,trpezarijski sto
+domaćinstvo,stolica
+domaćinstvo,klupa
+domaćinstvo,krevet
+domaćinstvo,dušek
+domaćinstvo,jastuk
+domaćinstvo,jorgan
+domaćinstvo,posteljina
+domaćinstvo,noćni stočić
+domaćinstvo,komoda
+domaćinstvo,ogledalo
+domaćinstvo,lampa
+domaćinstvo,ventilator
+domaćinstvo,klima uređaj
+domaćinstvo,grejalica
+domaćinstvo,ovlaživač
+domaćinstvo,aparat za kafu
+domaćinstvo,čajnik
+domaćinstvo,cediljka
+domaćinstvo,mikser
+domaćinstvo,otvarač za konzerve
+domaćinstvo,otvarač za flaše
+muzika,orkestar
+muzika,saksofon
+muzika,tamburin
+muzika,harmonika
+muzika,usna harmonika
+muzika,ksilofon
+muzika,metronom
+muzika,sintisajzer
+muzika,trombon
+muzika,udaraljke
+muzika,pojačalo
+muzika,mikrofon
+muzika,slušalice
+muzika,dirigent
+muzika,simfonija
+muzika,melodija
+muzika,ritam
+muzika,harmonija
+muzika,serenada
+muzika,klavir
+muzika,gitara
+muzika,violina
+muzika,čelo
+muzika,bas
+muzika,bubnjevi
+muzika,flauta
+muzika,klarinet
+muzika,truba
+muzika,harfa
+muzika,bendžo
+muzika,ukulele
+muzika,gajde
+muzika,didžeridu
+muzika,sitar
+muzika,tabla
+muzika,djembe
+muzika,marimba
+muzika,vibrafon
+muzika,glockenspiel
+muzika,teremin
+muzika,gramofon
+muzika,sempler
+muzika,sekvencer
+muzika,vokoder
+muzika,autotjun
+muzika,distorzija
+muzika,reverb
+muzika,eho
+muzika,horus
+muzika,ekvilajzer
+muzika,kompresor
+muzika,mikser
+muzika,zvučna tabla
+muzika,monitor
+muzika,zvučnik
+muzika,subvufer
+muzika,tviter
+muzika,vufer
+muzika,efekt pedala
+muzika,štimer
+muzika,kapo
+muzika,trzalica
+muzika,gudalo
+muzika,pisak
+muzika,ventil
+muzika,žica
+muzika,most
+muzika,prag
+muzika,čivija
+muzika,rezonator
+muzika,pickup
+muzika,tremolo
+muzika,pedala za sustain
+muzika,notni zapis
+muzika,nota
+muzika,pauza
+muzika,ključ
+muzika,tonalitet
+muzika,takt
+muzika,tempo
+muzika,dinamika
+muzika,artikulacija
+muzika,akord
+muzika,skala
+muzika,arpeđo
+muzika,oktava
+muzika,interval
+priroda,suncokret
+priroda,maslačak
+priroda,lavina
+priroda,uragan
+priroda,zemljotres
+priroda,glečer
+priroda,gejzir
+priroda,živi pesak
+priroda,stalagmit
+priroda,stalaktit
+priroda,bioluminiscencija
+priroda,fotosinteza
+priroda,hibernacija
+priroda,migracija
+priroda,oprašivanje
+priroda,ekosistem
+priroda,prašuma
+priroda,tundra
+priroda,savana
+priroda,koral
+priroda,hrast
+priroda,bor
+priroda,sekvoja
+priroda,bambus
+priroda,kaktus
+priroda,paprat
+priroda,mahovina
+priroda,lišaj
+priroda,alge
+priroda,morska trava
+priroda,kelp
+priroda,plankton
+priroda,bakterija
+priroda,gljiva
+priroda,pečurka
+priroda,orhideja
+priroda,ljiljan
+priroda,ruža
+priroda,lala
+priroda,tratinčica
+priroda,lavanda
+priroda,čičak
+priroda,detelina
+priroda,bršljan
+priroda,loza
+priroda,vrba
+priroda,breza
+priroda,javor
+priroda,jasika
+priroda,baobab
+priroda,mangrova
+priroda,palma
+priroda,čempres
+priroda,kleka
+priroda,smreka
+priroda,kedar
+priroda,eukaliptus
+priroda,akacija
+priroda,bonsai
+priroda,listopadno
+priroda,četinarsko
+priroda,zimzeleno
+priroda,višegodišnje
+priroda,jednogodišnje
+priroda,dvogodišnje
+priroda,mesožderka
+priroda,sukulenti
+priroda,suša
+priroda,poplava
+priroda,cunami
+priroda,tornado
+priroda,ciklon
+priroda,tajfun
+priroda,mećava
+priroda,grad
+priroda,oluja
+priroda,munja
+priroda,duga
+priroda,aurora
+priroda,izlazak sunca
+priroda,zalazak sunca
+priroda,sumrak
+priroda,zora
+priroda,veče
+priroda,solsticij
+priroda,ravnodnevnica
+priroda,plima
+priroda,oseka
+priroda,talas
+priroda,erozija
+priroda,sedimentacija
+priroda,fosilizacija
+priroda,petrifikacija
+priroda,kristalizacija
+priroda,metamorfoza
+priroda,adaptacija
+priroda,evolucija
+priroda,mutacija
+priroda,prirodna selekcija
+priroda,biodiverzitet
+priroda,simbioza
+priroda,parazitizam
+priroda,mutualizam
+nauka,teleskop
+nauka,mikroskop
+nauka,laboratorija
+nauka,eksperiment
+nauka,hipoteza
+nauka,molekul
+nauka,gravitacija
+nauka,magnetizam
+nauka,evolucija
+nauka,genetika
+nauka,astronomija
+nauka,hemija
+nauka,biologija
+nauka,fizika
+nauka,botanika
+nauka,zoologija
+nauka,arheologija
+nauka,paleontologija
+nauka,meteorologija
+nauka,neuronauka
+nauka,atom
+nauka,elektron
+nauka,proton
+nauka,neutron
+nauka,jezgro
+nauka,izotop
+nauka,element
+nauka,jedinjenje
+nauka,reakcija
+nauka,katalizator
+nauka,enzim
+nauka,protein
+nauka,DNK
+nauka,RNK
+nauka,hromozom
+nauka,gen
+nauka,genom
+nauka,ćelija
+nauka,membrana
+nauka,mitohondrija
+nauka,hloroplast
+nauka,ribozom
+nauka,bakterija
+nauka,virus
+nauka,gljiva
+nauka,parazit
+nauka,simbioza
+nauka,ekosistem
+nauka,biodiverzitet
+nauka,taksonomija
+nauka,vrsta
+nauka,rod
+nauka,porodica
+nauka,red
+nauka,klasa
+nauka,razdeo
+nauka,carstvo
+nauka,domen
+nauka,fosil
+nauka,sediment
+nauka,stratigrafija
+nauka,tektonika ploča
+nauka,zemljotres
+nauka,vulkan
+nauka,magma
+nauka,lava
+nauka,magmatske stene
+nauka,metamorfne stene
+nauka,sedimentne stene
+nauka,mineral
+nauka,kristal
+nauka,dragi kamen
+nauka,ruda
+nauka,metal
+nauka,legura
+nauka,polimer
+nauka,plastika
+nauka,keramika
+nauka,staklo
+nauka,poluprovodnik
+nauka,superprovodnik
+nauka,izolator
+nauka,provodnik
+nauka,kolo
+nauka,struja
+nauka,napon
+nauka,otpor
+nauka,kapacitet
+nauka,induktivnost
+nauka,frekvencija
+nauka,talasna dužina
+nauka,amplituda
+nauka,spektar
+nauka,zračenje
+nauka,radioaktivnost
+nauka,poluraspad
+nauka,fuzija
+nauka,fisija
+nauka,kvant
+nauka,relativnost
+nauka,prostor-vreme
+nauka,dimenzija
+nauka,teorija struna
+nauka,multiverzum
+nauka,crna rupa
+nauka,neutronska zvezda
+nauka,pulsar
+nauka,kvazar
+nauka,galaksija
+nauka,maglina
+nauka,supernova
+nauka,kometa
+nauka,asteroid
+nauka,meteor
+nauka,planeta
+nauka,mesec
+nauka,satelit
+nauka,orbita
+nauka,pomračenje

@@ -19,10 +19,3 @@ export function getRandomWord(): string {
   return words[Math.floor(Math.random() * words.length)];
 }
 
-/**
- * Get all available words
- * @returns {string[]} Array of all available words
- */
-export function getAllWords(): string[] {
-  return [...words];
-}

@@ -504,17 +504,7 @@
   }
 
   .pass-device::before {
-    content: "⚠ SECURE TRANSMISSION ⚠";
-    position: absolute;
-    top: -10px;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: #e63946;
-    color: white;
-    font-size: 0.7em;
-    padding: 3px 8px;
-    border-radius: 3px;
-    font-family: 'Roboto Mono', monospace;
+    content: none; /* Removed secure transmission banner as it was overlapping with other components */
   }
 
   .game-info {
@@ -691,10 +681,7 @@
     margin-top: 4px;
   }
   
-  /* Prevent duplicate "SECURE TRANSMISSION" text on the setup heading */
-  .setup-heading::before {
-    content: none;
-  }
+  /* This rule is no longer needed as we've removed the secure transmission banner */
 
   /* Tablet and larger */
   @media (min-width: 768px) {

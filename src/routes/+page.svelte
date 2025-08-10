@@ -1,6 +1,17 @@
 <script>
   import { writable } from 'svelte/store';
-  import { getRandomWord } from '../lib/api';
+  import { onMount } from 'svelte';
+  import { 
+    getRandomWord, 
+    allWordsUsed, 
+    getTotalWordCount, 
+    getUsedWordCount,
+    initializeWords,
+    getCategories,
+    getSelectedCategories,
+    setSelectedCategories,
+    getCategoryStats
+  } from '../lib/api';
 
   /* —— 1. Lobby state —— */
   let playerNames = ['Alice', 'Bob', 'Charlie'];  // editable in UI
@@ -13,6 +24,56 @@
   /* —— 2. Game state —— */
   const assignments = writable({});
   const secretWord = writable('');
+  const noMoreWords = writable(false);
+  
+  /* —— Category state —— */
+  let categories = [];
+  let selectedCategories = [];
+  let categoryStats = {};
+  let isLoading = true;
+  
+  // Initialize words when component mounts
+  onMount(async () => {
+    await initializeWords();
+    categories = getCategories();
+    selectedCategories = getSelectedCategories();
+    updateCategoryStats();
+    isLoading = false;
+  });
+  
+  // Update category statistics
+  function updateCategoryStats() {
+    categoryStats = getCategoryStats();
+  }
+  
+  // Toggle category selection
+  function toggleCategory(categoryName) {
+    if (selectedCategories.includes(categoryName)) {
+      // Remove category if it's already selected
+      selectedCategories = selectedCategories.filter(c => c !== categoryName);
+    } else {
+      // Add category if it's not selected
+      selectedCategories = [...selectedCategories, categoryName];
+    }
+    
+    // Update the API with the new selection
+    setSelectedCategories(selectedCategories);
+    updateCategoryStats();
+  }
+  
+  // Select all categories
+  function selectAllCategories() {
+    selectedCategories = categories.map(c => c.name);
+    setSelectedCategories(selectedCategories);
+    updateCategoryStats();
+  }
+  
+  // Deselect all categories
+  function deselectAllCategories() {
+    selectedCategories = [];
+    setSelectedCategories(selectedCategories);
+    updateCategoryStats();
+  }
 
   // Calculate max spies (1/3 of total players, rounded down)
   $: maxSpies = Math.max(1, Math.floor(playerNames.length / 3));
@@ -24,7 +85,15 @@
 
   function startGame() {
     /* get a random word from our API */
-    secretWord.set(getRandomWord());
+    const word = getRandomWord();
+    
+    // Check if we've run out of words
+    if (word === null) {
+      noMoreWords.set(true);
+      return;
+    }
+    
+    secretWord.set(word);
 
     /* randomly pick spies */
     const shuffled = [...playerNames].sort(() => Math.random() - 0.5);
@@ -60,6 +129,7 @@
     current = 0;
     secretWord.set('');
     assignments.set({});
+    updateCategoryStats();
   }
 
   // Function to add a new player
@@ -80,42 +150,103 @@
 </script>
 
 <main>
-  <h1>Shpijunchina</h1>
+  <h1>Špijunčina</h1>
 
   {#if $stage === 'lobby'}
     <div class="lobby">
       <h2 class="pass-device">Setup Game</h2>
 
-      <div class="player-list">
-        <h3>Players</h3>
-        {#each playerNames as name, i}
-          <div class="player-input">
-            <input 
-              type="text" 
-              bind:value={name} 
-              on:input={() => updatePlayerName(i, name)}
-              placeholder="Player name"
-            />
-            <button on:click={() => removePlayer(i)}>Remove</button>
+      {#if isLoading}
+        <div class="loading">
+          <p>Loading word categories...</p>
+        </div>
+      {:else}
+        {#if $noMoreWords}
+          <div class="no-more-words">
+            <p>You've used all available words in the selected categories!</p>
+            <p>Select different categories or refresh the page to start a new session.</p>
           </div>
-        {/each}
-        <button on:click={addPlayer}>Add Player</button>
-      </div>
+        {:else}
+          <div class="word-stats">
+            <p>Words used: {getUsedWordCount()} / {getTotalWordCount()}</p>
+          </div>
+        {/if}
 
-      <div class="spy-count">
-        <h3>Number of Spies</h3>
-        <input 
-          type="range" 
-          min="1" 
-          max={maxSpies} 
-          bind:value={spyCount}
-        />
-        <span class="spy-count-text">{spyCount} {spyCount === 1 ? 'spy' : 'spies'} (max: {maxSpies})</span>
-      </div>
+        <!-- Category Selection -->
+        <div class="category-selection">
+          <h3>Word Categories</h3>
+          <div class="category-actions">
+            <button on:click={selectAllCategories} class="category-button">Select All</button>
+            <button on:click={deselectAllCategories} class="category-button">Deselect All</button>
+          </div>
+          
+          <div class="categories-grid">
+            {#each categories as category}
+              <div class="category-item">
+                <label class="category-label">
+                  <input 
+                    type="checkbox" 
+                    checked={selectedCategories.includes(category.name)} 
+                    on:change={() => toggleCategory(category.name)}
+                  />
+                  <span class="category-name">{category.name}</span>
+                  {#if categoryStats[category.name]}
+                    <span class="category-stat">
+                      ({categoryStats[category.name].used}/{categoryStats[category.name].total})
+                    </span>
+                  {/if}
+                </label>
+              </div>
+            {/each}
+          </div>
+          
+          {#if selectedCategories.length === 0}
+            <div class="warning">
+              <p>Please select at least one category to play.</p>
+            </div>
+          {/if}
+        </div>
 
-      <button class="start-button" on:click={startGame} disabled={playerNames.length < 3 || playerNames.some(name => !name.trim())}>
-        Start Game
-      </button>
+        <div class="player-list">
+          <h3>Players</h3>
+          {#each playerNames as name, i}
+            <div class="player-input">
+              <input 
+                type="text" 
+                bind:value={name} 
+                on:input={() => updatePlayerName(i, name)}
+                placeholder="Player name"
+              />
+              <button on:click={() => removePlayer(i)}>Remove</button>
+            </div>
+          {/each}
+          <button on:click={addPlayer}>Add Player</button>
+        </div>
+
+        <div class="spy-count">
+          <h3>Number of Spies</h3>
+          <input 
+            type="range" 
+            min="1" 
+            max={maxSpies} 
+            bind:value={spyCount}
+          />
+          <span class="spy-count-text">{spyCount} {spyCount === 1 ? 'spy' : 'spies'} (max: {maxSpies})</span>
+        </div>
+
+        <button 
+          class="start-button" 
+          on:click={startGame} 
+          disabled={
+            playerNames.length < 3 || 
+            playerNames.some(name => !name.trim()) || 
+            $noMoreWords || 
+            selectedCategories.length === 0
+          }
+        >
+          Start Game
+        </button>
+      {/if}
     </div>
   {:else if $stage === 'reveal'}
     <div class="reveal">
@@ -141,7 +272,34 @@
     <div class="done">
       <h2 class="pass-device">All set — start guessing!</h2>
       <p class="game-info">All players have seen their roles. The spies need to figure out the secret word!</p>
-      <button on:click={resetGame}>Play Again</button>
+      
+      {#if allWordsUsed()}
+        <div class="no-more-words">
+          <p>You've used all available words in the selected categories!</p>
+          <p>Return to the lobby to select different categories or refresh the page to start a new session.</p>
+        </div>
+        <button on:click={resetGame}>Return to Lobby</button>
+      {:else}
+        <div class="word-stats">
+          <p>Words used: {getUsedWordCount()} / {getTotalWordCount()}</p>
+          
+          <!-- Category Statistics -->
+          <div class="category-stats">
+            <h3>Category Statistics</h3>
+            <div class="category-stats-grid">
+              {#each Object.entries(categoryStats) as [category, stats]}
+                {#if selectedCategories.includes(category)}
+                  <div class="category-stat-item">
+                    <span class="category-name">{category}</span>
+                    <span class="category-usage">{stats.used}/{stats.total} used</span>
+                  </div>
+                {/if}
+              {/each}
+            </div>
+          </div>
+        </div>
+        <button on:click={resetGame}>Play Again</button>
+      {/if}
     </div>
   {/if}
 </main>
@@ -300,6 +458,159 @@
     text-align: center;
     font-size: 1.1em;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .no-more-words {
+    background-color: #fff8e1;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #ffecb3;
+    margin-bottom: 15px;
+    color: #ff6f00;
+    text-align: center;
+    font-size: 1.1em;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .no-more-words p {
+    margin: 5px 0;
+  }
+  
+  .word-stats {
+    background-color: #e8f5e9;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #c8e6c9;
+    margin-bottom: 15px;
+    color: #2e7d32;
+    text-align: center;
+    font-size: 1em;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .word-stats p {
+    margin: 5px 0;
+    font-weight: bold;
+  }
+  
+  /* Category Selection Styles */
+  .category-selection {
+    border: 1px solid #ddd;
+    padding: 12px;
+    border-radius: 5px;
+    background-color: #fff;
+    margin-bottom: 15px;
+  }
+  
+  .category-selection h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #2e7d32;
+    text-align: center;
+  }
+  
+  .category-actions {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .category-button {
+    flex: 1;
+    padding: 8px;
+    font-size: 0.9em;
+  }
+  
+  .categories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+  }
+  
+  .category-item {
+    padding: 8px;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+  }
+  
+  .category-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+  }
+  
+  .category-name {
+    font-weight: 700;
+    text-transform: capitalize;
+    font-size: 1.1em;
+    color: #2e7d32;
+    display: inline-block;
+    padding: 2px 0;
+  }
+  
+  .category-stat {
+    font-size: 0.8em;
+    color: #666;
+    margin-left: auto;
+  }
+  
+  .warning {
+    background-color: #fff3cd;
+    color: #856404;
+    padding: 10px;
+    border-radius: 4px;
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  .loading {
+    text-align: center;
+    padding: 20px;
+    color: #666;
+  }
+  
+  /* Category Statistics Styles */
+  .category-stats {
+    margin-top: 15px;
+    padding: 10px;
+    border: 1px solid #c8e6c9;
+    border-radius: 5px;
+    background-color: #f1f8e9;
+  }
+  
+  .category-stats h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #2e7d32;
+    text-align: center;
+  }
+  
+  .category-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 8px;
+  }
+  
+  .category-stat-item {
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    border: 1px solid #c8e6c9;
+    border-radius: 4px;
+    background-color: #e8f5e9;
+  }
+
+  /* Ensure category names have proper contrast in the statistics section */
+  .category-stat-item .category-name {
+    color: #1b5e20; /* Darker green for better contrast on light green background */
+  }
+  
+  .category-usage {
+    font-size: 0.9em;
+    color: #2e7d32;
+    margin-top: 4px;
   }
 
   /* Tablet and larger */

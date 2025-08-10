@@ -51,6 +51,16 @@
       revealState = 'waiting';
     }
   }
+  
+  /* —— 4. Reset game —— */
+  function resetGame() {
+    // Reset game state but keep player configuration
+    stage.set('lobby');
+    revealState = 'waiting';
+    current = 0;
+    secretWord.set('');
+    assignments.set({});
+  }
 
   // Function to add a new player
   function addPlayer() {
@@ -131,7 +141,7 @@
     <div class="done">
       <h2 class="pass-device">All set — start guessing!</h2>
       <p class="game-info">All players have seen their roles. The spies need to figure out the secret word!</p>
-      <button on:click={() => location.reload()}>Play Again</button>
+      <button on:click={resetGame}>Play Again</button>
     </div>
   {/if}
 </main>
